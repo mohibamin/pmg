@@ -5,7 +5,8 @@
 export const STORES = {
   walmart: {
     name: "Walmart",
-    color: "#3b8cff",
+    color: "#0071dc",
+    logo: "assets/logos/walmart.png",
     flipp: "walmart",
     flyerUrl: "https://www.walmart.ca/en/flyer",
     pm: "no",
@@ -14,7 +15,8 @@ export const STORES = {
   },
   costco: {
     name: "Costco",
-    color: "#ff4b5c",
+    color: "#e31837",
+    logo: "assets/logos/costco.png",
     flipp: "costco",
     flyerUrl: "https://www.costco.ca/warehouse-savings.html",
     pm: "no",
@@ -24,7 +26,8 @@ export const STORES = {
   },
   sobeys: {
     name: "Sobeys",
-    color: "#3ddc84",
+    color: "#1d7a46",
+    logo: "assets/logos/sobeys.png",
     flipp: "sobeys",
     flyerUrl: "https://www.sobeys.com/flyer/",
     pm: "no",
@@ -33,7 +36,8 @@ export const STORES = {
   },
   freshco: {
     name: "FreshCo",
-    color: "#9be15d",
+    color: "#7cb518",
+    logo: "assets/logos/freshco.png",
     flipp: "freshco",
     flyerUrl: "https://freshco.com/flyer/",
     pm: "yes",
@@ -43,7 +47,8 @@ export const STORES = {
   },
   chalofreshco: {
     name: "Chalo FreshCo",
-    color: "#ff9f43",
+    color: "#f08c00",
+    logo: "assets/logos/chalofreshco.png",
     flipp: "chalofreshco",
     flyerUrl: "https://www.chalofreshco.com/flyer/",
     pm: "unknown",
@@ -52,7 +57,8 @@ export const STORES = {
   },
   foodbasics: {
     name: "Food Basics",
-    color: "#ffd166",
+    color: "#00843d",
+    logo: "assets/logos/foodbasics.png",
     flipp: "foodbasics",
     flyerUrl: "https://www.foodbasics.ca/flyer",
     pm: "unknown",
@@ -61,7 +67,8 @@ export const STORES = {
   },
   nofrills: {
     name: "No Frills",
-    color: "#ffe14d",
+    color: "#f5c400",
+    logo: "assets/logos/nofrills.png",
     flipp: "nofrills",
     flyerUrl: "https://www.nofrills.ca/print-flyer",
     pm: "yes",
@@ -71,7 +78,8 @@ export const STORES = {
   },
   iqbal: {
     name: "Iqbal Foods",
-    color: "#2ee6a0",
+    color: "#d7141a",
+    logo: "assets/logos/iqbal.png",
     flipp: null,
     flyerUrl: "https://iqbalfoods.ca/shop?special_items=discount",
     pm: "no",

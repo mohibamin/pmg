@@ -62,18 +62,19 @@ export async function loadFlyers(postal) {
 export const isFuture = (d) => !!d && new Date(d) > Date.now();
 
 export async function loadFlyerItems(flyer) {
-  const key = `ff:items:${flyer.id}`;
+  const key = `ff:items:v3:${flyer.id}`; // bump when the item shape or filter changes
   const hit = cacheGet(key);
   if (hit) return hit;
   const data = await getJSON(`${FLIPP}/flyers/${flyer.id}?locale=en-ca`);
   const items = (data.items || [])
-    .filter((i) => i.name && i.price && !/^[A-Z0-9_-]{8,}$/.test(i.name.trim())) // skip banner codes like "CSTCG1026…"
+    .filter((i) => i.name && parseFloat(i.price) > 0 && !/^[A-Z0-9_-]{8,}$/.test(i.name.trim())) // skip $0 promos and banner codes like "CSTCG1026…"
     .map((i) => ({
       id: i.id,
       store: flyer.store,
       name: i.name,
       brand: i.brand || "",
       price: parseFloat(i.price),
+      discount: i.discount || 0, // % off regular, when the flyer says
       image: https(i.cutout_image_url),
       validTo: i.valid_to || flyer.to,
       startsAt: i.valid_from || flyer.from,
@@ -131,9 +132,11 @@ export async function loadIqbal(base = "") {
       name: i.name,
       brand: "",
       price: i.price,
+      discount: i.regular > i.price ? Math.round((1 - i.price / i.regular) * 100) : 0,
       image: i.image,
       validTo: null,
       source: "iqbal",
+      category: i.category || "",
       details: { pre: "", post: "", original: i.regular, sale: i.regular ? `Reg. $${i.regular.toFixed(2)}` : "", description: i.category || "", link: i.url },
     })),
   };
@@ -208,6 +211,71 @@ export function verdictPool(results) {
   }
   const clean = results.filter((r) => !r.processed);
   return clean.length ? clean : results;
+}
+
+// ── Categories ──────────────────────────────────────────────────────
+// Flipp items carry no category, so they're sorted by keywords in the name.
+// Rules run top to bottom and the first hit wins, which is why "tomato sauce"
+// lands in pantry before the vegetable rule sees "tomato".
+export const CATEGORIES = [
+  { key: "veg", label: "Vegetables" },
+  { key: "fruit", label: "Fruit" },
+  { key: "meat", label: "Meat & Seafood" },
+  { key: "dairy", label: "Dairy & Eggs" },
+  { key: "bakery", label: "Bakery" },
+  { key: "pantry", label: "Pantry" },
+  { key: "frozen", label: "Frozen" },
+  { key: "snacks", label: "Snacks & Sweets" },
+  { key: "drinks", label: "Drinks" },
+  { key: "household", label: "Household & Care" },
+];
+export const CATEGORY_LABEL = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.label]).concat([["other", "Other"]]));
+
+const PHRASES = [[/peanut butter/g, "peanutbutter"], [/ice cream/g, "icecream"], [/k-?cups?/g, "kcup"], [/paper towels?/g, "papertowel"], [/(dog|cat) food/g, "petfood"], [/chocolate milk/g, "chocmilk"], [/(grape|cherry) tomato/g, "tomato"], [/vitamin ?water/g, "water"], [/coffee makers?|kettles?|blenders?|air fryers?/g, "appliance"], [/cream sella/g, "sella rice"]];
+const CAT_RULES = [
+  ["household", `tissue papertowel napkin detergent soap shampoo conditioner toothpaste toothbrush diaper wipes vitamin supplement
+    deodorant lotion razor bleach cleaner garbage foil battery litter petfood pedigree cesar whiskas friskies purina pet pad tampon
+    tylenol advil robitussin nicorette nicotine cosmetic makeup candle plant flower bouquet charcoal laundry dish dishwasher softener
+    sanitizer mouthwash floss wash cologne perfume underwear ziploc appliance`],
+  ["pantry", "sauce paste soup ketchup canned pickle pickles peanutbutter salsa gravy broth stock cereal cheerios shreddies"],
+  ["frozen", "frozen icecream popsicle fries superfries pizza nuggets waffles perogies pierogi entree samosa"],
+  ["drinks", `juice pop soda cola pepsi coke sprite water coffee tea kombucha beverage drink lemonade gatorade beer wine sparkling
+    smoothie kcup espresso`],
+  ["snacks", "chips crisps popcorn pretzel straws snax lays doritos ruffles cheetos pringles"],
+  ["bakery", `bread bun bagel croissant muffin tortilla naan pita roti cake donut doughnut pie loaf baguette danish brioche rusk
+    toast pastry pastries crumpet`],
+  ["snacks", `cookie cookies chocolate candy gum cracker bar granola snack nut almond cashew peanut pistachio jerky gummy mithai
+    halwa rasmalai burfi laddu biscuit oreo marshmallow licorice treats brownie dip`],
+  ["dairy", "chocmilk milk cheese yogurt yogourt butter egg cream creamer kefir paneer ghee brie cheddar mozzarella parmesan feta margarine dahi lassi"],
+  ["meat", `chicken beef pork lamb goat veal turkey ham bacon sausage steak rib wing drumstick thigh breast fish salmon tilapia cod
+    shrimp prawn keema mince ground chop chops loin roast meatball haddock trout basa crab lobster seafood wiener deli scallop`],
+  ["fruit", `apple banana orange grape strawberry blueberry raspberry blackberry berry mango pear peach plum nectarine lemon lime
+    melon watermelon cantaloupe pineapple kiwi cherry clementine mandarin pomegranate papaya guava avocado coconut date fig grapefruit`],
+  ["veg", `tomato potato onion carrot lettuce cucumber pepper broccoli cauliflower spinach celery garlic ginger mushroom corn cabbage
+    zucchini squash eggplant okra kale cilantro coriander salad asparagus beet radish turnip leek pea yam bok choy chili chilli
+    herb parsley vegetable veggie`],
+  ["pantry", `rice pasta spaghetti flour atta oil cereal oat oatmeal sugar salt spice masala bean lentil dal daal chickpea mustard
+    mayo mayonnaise jam honey syrup noodle vinegar stock broth tuna seasoning poha suji semolina besan macaroni ramen`],
+].map(([cat, list]) => [cat, new Set(words(list))]);
+
+// Iqbal's own site categories, used before the keyword rules.
+const IQBAL_CATS = [
+  [/health|beauty|household|clean/i, "household"], [/frozen/i, "frozen"], [/snack|sweet|cand|chocolate|cookie/i, "snacks"],
+  [/bakery/i, "bakery"], [/meat|chicken|beef|goat|lamb|veal|fish|seafood/i, "meat"], [/dairy/i, "dairy"],
+  [/tea|coffee|beverage|drink|juice/i, "drinks"],
+];
+
+export function categorize(item) {
+  if (item.category) {
+    const hit = IQBAL_CATS.find(([re]) => re.test(item.category));
+    if (hit) return hit[1];
+  }
+  let name = item.name.toLowerCase();
+  for (const [re, w] of PHRASES) name = name.replace(re, w);
+  const toks = words(name);
+  for (const [cat, set] of CAT_RULES) if (toks.some((t) => set.has(t))) return cat;
+  if (/fruit|vegetable/i.test(item.category || "")) return "veg";
+  return item.category ? "pantry" : "other";
 }
 
 // ── Prices ──────────────────────────────────────────────────────────

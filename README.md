@@ -32,7 +32,8 @@ Refresh Iqbal specials by hand with `python scripts/scrape_iqbal.py`.
 
 ## Files
 
-- `js/core.js`: Flipp/Iqbal loading, search ranking, unit-price maths. No DOM, so it can be tested in Node.
-- `js/app.js`: UI rendering and events.
-- `js/stores.js`: store list, colours, price-match policies.
-- `css/style.css`: theme (mohibamin.com base with an emerald accent).
+- `js/core.js`: Flipp/Iqbal loading, search ranking, keyword categories, unit-price maths. No DOM, so it can be tested in Node.
+- `js/app.js`: UI rendering and events, including top deals and the search history behind the quick chips (kept in the browser's localStorage).
+- `js/stores.js`: store list, colours, logos, price-match policies.
+- `assets/logos/`: store logos (from Flipp's merchant images and iqbalfoods.ca), trimmed to size.
+- `css/style.css`: light grocery theme (green actions, yellow shelf-tag prices).
