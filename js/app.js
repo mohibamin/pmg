@@ -1,8 +1,8 @@
-import { STORES, STORE_KEYS, matchersFor } from "./stores.js?v=20261102b";
+import { STORES, STORE_KEYS, matchersFor } from "./stores.js?v=20261102c";
 import {
   loadFlyers, loadFlyerItems, loadDetails, searchDetails, loadIqbal, search, verdictPool, effectivePrice,
   priceLabel, cheapest, fmt, UNIT_LABEL, cleanPostal, validPostal, isFuture, categorize, CATEGORIES, CATEGORY_LABEL,
-} from "./core.js?v=20261102b";
+} from "./core.js?v=20261102c";
 
 const DEFAULT_POSTAL = "M5B2K3"; // downtown Toronto
 const QUICK = ["Roma tomatoes", "Bananas", "Eggs", "Milk", "Chicken thighs", "Ground beef", "Onions", "Basmati rice", "Butter", "Avocados"];
@@ -565,6 +565,7 @@ function openDeals(k) {
 }
 
 function showTab(name) {
+  $("#sideNav").hidden = name !== "compare";
   document.querySelectorAll(".tab-btn").forEach((b) => b.classList.toggle("active", b.dataset.tab === name));
   document.querySelectorAll(".tab-panel").forEach((p) => p.classList.toggle("active", p.id === `tab-${name}`));
 }
@@ -714,6 +715,30 @@ document.addEventListener("click", (e) => {
   }
 });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("#lightbox").hidden = true; });
+
+// ── Side nav ────────────────────────────────────────────────────────
+// Jumps between Compare sections and highlights the one in view: the last
+// section whose top has passed 40% of the way down the screen.
+const JUMPS = [...document.querySelectorAll("[data-jump]")].map((b) => b.dataset.jump);
+
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-jump]");
+  if (!b) return;
+  if (b.dataset.jump === "hero") window.scrollTo({ top: 0, behavior: "smooth" });
+  else document.getElementById(b.dataset.jump).scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+let navFrame = 0;
+function updateSideNav() {
+  navFrame = 0;
+  const line = innerHeight * 0.4;
+  let current = JUMPS[0];
+  for (const id of JUMPS) if (document.getElementById(id).getBoundingClientRect().top < line) current = id;
+  // The last section can be too short to cross the line, so the page bottom counts as reaching it.
+  if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4) current = JUMPS[JUMPS.length - 1];
+  document.querySelectorAll("[data-jump]").forEach((b) => b.classList.toggle("active", b.dataset.jump === current));
+}
+addEventListener("scroll", () => { navFrame ||= requestAnimationFrame(updateSideNav); }, { passive: true });
 
 // ── Boot ────────────────────────────────────────────────────────────
 $("#postal").value = fmtPostal(state.postal);

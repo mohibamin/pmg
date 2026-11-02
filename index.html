@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://backflipp.wishabi.com" crossorigin>
   <link rel="preconnect" href="https://f.wishabi.net">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=20261102b">
+  <link rel="stylesheet" href="css/style.css?v=20261102c">
 </head>
 <body>
   <header class="topbar">
@@ -44,7 +44,7 @@
   <main>
     <!-- ── Compare ─────────────────────────────────────────── -->
     <section class="tab-panel active" id="tab-compare">
-      <div class="hero">
+      <div class="hero" id="hero">
         <div class="eyebrow">This week's flyers <span id="weekRange"></span></div>
         <h1>Find the lowest grocery prices near you</h1>
         <p class="lede">One search checks the current flyers at <span id="storeCount">8</span> stores, shows the cheapest, and tells you who will price match it.</p>
@@ -66,7 +66,7 @@
 
       <div id="results"></div>
 
-      <section class="block">
+      <section class="block" id="categories">
         <div class="block-head">
           <h2>Shop by category</h2>
           <p>Every deal in this week's flyers, sorted into aisles.</p>
@@ -74,7 +74,7 @@
         <div class="cat-grid" id="catGrid"></div>
       </section>
 
-      <section class="block">
+      <section class="block" id="top-deals">
         <div class="block-head">
           <h2>Top 10 deals this week</h2>
           <p>The biggest discounts on food across the stores you're comparing.</p>
@@ -82,7 +82,7 @@
         <div class="deal-grid top-grid" id="topDeals"></div>
       </section>
 
-      <section class="block how">
+      <section class="block how" id="how">
         <div class="block-head"><h2>How it works</h2></div>
         <ol class="how-grid">
           <li><b>Search once</b><span>Type any grocery item. Every store's current flyer is checked at the same time.</span></li>
@@ -123,6 +123,13 @@
     </section>
   </main>
 
+  <nav class="side-nav" id="sideNav" aria-label="Jump to section">
+    <button data-jump="hero" class="active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/></svg><span>Top</span></button>
+    <button data-jump="categories"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span>Shop by category</span></button>
+    <button data-jump="top-deals"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9z"/><circle cx="8" cy="8" r="1.5"/></svg><span>Top 10 deals</span></button>
+    <button data-jump="how"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.5"/><path d="M12 16.8h.01" stroke-width="2.6"/></svg><span>How it works</span></button>
+  </nav>
+
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand"><span class="brand-mark small">PMG</span> Price Match Groceries</div>
@@ -138,6 +145,6 @@
     </figure>
   </div>
 
-  <script type="module" src="js/app.js?v=20261102b"></script>
+  <script type="module" src="js/app.js?v=20261102c"></script>
 </body>
 </html>

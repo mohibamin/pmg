@@ -437,6 +437,34 @@ main { max-width: 1240px; margin: 0 auto; padding: 0 28px 72px; }
 .deal-skel { height: 300px; }
 .deals-more { display: flex; margin: 24px auto 0; }
 
+/* ── Side nav (Compare tab) ─────────────────────────────────────── */
+#hero, .block { scroll-margin-top: 130px; }
+.side-nav {
+  position: fixed; right: 18px; top: 50%; transform: translateY(-50%); z-index: 40;
+  display: flex; flex-direction: column; gap: 4px; padding: 6px;
+  border-radius: 999px; border: 1px solid rgba(23, 35, 27, 0.08);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+}
+.side-nav[hidden] { display: none; }
+.side-nav button {
+  position: relative; display: grid; place-items: center; width: 40px; height: 40px;
+  border: 0; border-radius: 50%; cursor: pointer; background: transparent; color: var(--muted);
+  transition: background .15s, color .15s;
+}
+.side-nav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.side-nav button:hover { background: rgba(27, 127, 69, 0.1); color: var(--green-700); }
+.side-nav button.active { background: var(--green); color: #fff; }
+/* Label slides out to the left on hover or keyboard focus */
+.side-nav span {
+  position: absolute; right: calc(100% + 12px); top: 50%; transform: translate(6px, -50%);
+  padding: 5px 10px; border-radius: 8px; white-space: nowrap; pointer-events: none;
+  background: var(--ink); color: #fff; font-size: 0.78rem; font-weight: 600;
+  opacity: 0; transition: opacity .15s, transform .15s;
+}
+.side-nav button:hover span, .side-nav button:focus-visible span { opacity: 1; transform: translate(0, -50%); }
+
 /* ── Footer ─────────────────────────────────────────────────────── */
 .footer { background: var(--surface); border-top: 1px solid var(--line); }
 .footer-inner {
@@ -458,7 +486,13 @@ main { max-width: 1240px; margin: 0 auto; padding: 0 28px 72px; }
 @media (max-width: 1100px) {
   .top-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
 }
+@media (max-width: 1320px) {
+  .side-nav { right: 8px; }
+  main { padding-right: 72px; }
+}
 @media (max-width: 860px) {
+  .side-nav { top: auto; bottom: 16px; right: 50%; transform: translateX(50%); flex-direction: row; }
+  .side-nav span { display: none; }
   .topbar-inner { padding: 10px 16px 4px; gap: 12px; }
   .brand-sub { display: none; }
   .tab-bar { padding: 0 8px; }
