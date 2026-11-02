@@ -36,4 +36,5 @@ Refresh Iqbal specials by hand with `python scripts/scrape_iqbal.py`.
 - `js/app.js`: UI rendering and events, including top deals and the search history behind the quick chips (kept in the browser's localStorage).
 - `js/stores.js`: store list, colours, logos, price-match policies.
 - `assets/logos/`: store logos (from Flipp's merchant images and iqbalfoods.ca), trimmed to size.
+- `?v=` on the CSS/JS links (in `index.html`, `js/app.js`, `js/core.js`): bump it on every deploy, or Cloudflare may serve old files for up to 4 hours.
 - `css/style.css`: light grocery theme (green actions, yellow shelf-tag prices).

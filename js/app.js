@@ -1,8 +1,8 @@
-import { STORES, STORE_KEYS, matchersFor } from "./stores.js";
+import { STORES, STORE_KEYS, matchersFor } from "./stores.js?v=20261102";
 import {
   loadFlyers, loadFlyerItems, loadDetails, searchDetails, loadIqbal, search, verdictPool, effectivePrice,
   priceLabel, cheapest, fmt, UNIT_LABEL, cleanPostal, validPostal, isFuture, categorize, CATEGORIES, CATEGORY_LABEL,
-} from "./core.js";
+} from "./core.js?v=20261102";
 
 const DEFAULT_POSTAL = "M5B2K3"; // downtown Toronto
 const QUICK = ["Roma tomatoes", "Bananas", "Eggs", "Milk", "Chicken thighs", "Ground beef", "Onions", "Basmati rice", "Butter", "Avocados"];
