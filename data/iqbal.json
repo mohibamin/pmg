@@ -1,0 +1,564 @@
+{
+ "updated": "2026-11-01T23:53:50+00:00",
+ "source": "https://iqbalfoods.ca/shop?special_items=discount",
+ "items": [
+  {
+   "id": 74520,
+   "name": "Chicken Keema Regular Ground (Per Lb)",
+   "price": 3.99,
+   "regular": 7.49,
+   "image": "https://static.tossdown.com/images/e681edd0bc990ede05431c5d63c81a3a.jpeg",
+   "url": "https://iqbalfoods.ca/product/chicken-keema-regular-ground-per-lb-74520",
+   "category": "Meat - Chicken"
+  },
+  {
+   "id": 74527,
+   "name": "Chicken Thigh Boneless (Per Lb)",
+   "price": 5.69,
+   "regular": 8.15,
+   "image": "https://static.tossdown.com/images/f188c8091aa36af839db188507983bdd.png",
+   "url": "https://iqbalfoods.ca/product/chicken-thigh-boneless-per-lb-74527",
+   "category": "Meat - Chicken"
+  },
+  {
+   "id": 176237,
+   "name": "Beef With Bone- Per Lb.",
+   "price": 6.99,
+   "regular": 9.35,
+   "image": "https://static.tossdown.com/images/8e6ca9e9-bb69-4dd2-8877-970501a0e410.webp",
+   "url": "https://iqbalfoods.ca/product/beef-with-bone-per-lb-176237",
+   "category": "Meat - Beef"
+  },
+  {
+   "id": 74553,
+   "name": "Veal Boneless (Per Lb.)",
+   "price": 11.89,
+   "regular": 16.89,
+   "image": "https://static.tossdown.com/images/856c1e4d-1494-4005-850d-d4150523aa82.webp",
+   "url": "https://iqbalfoods.ca/product/veal-boneless-per-lb-74553",
+   "category": "Meat-veal"
+  },
+  {
+   "id": 86437,
+   "name": "Lamb Paya White With Skin - Per LB",
+   "price": 4.65,
+   "regular": 5.65,
+   "image": "https://static.tossdown.com/images/776c2a30d4402b8c5126edd7ad111c5e.png",
+   "url": "https://iqbalfoods.ca/product/lamb-paya-white-with-skin-per-lb-86437",
+   "category": "Meat- Goat/ Lamb"
+  },
+  {
+   "id": 299430,
+   "name": "Lamb Paya Burnt - Per Lb",
+   "price": 4.65,
+   "regular": 6.25,
+   "image": "https://static.tossdown.com/images/17811e47-8683-4305-9d46-05a7089ffb89.webp",
+   "url": "https://iqbalfoods.ca/product/lamb-paya-burnt-per-lb-299430",
+   "category": "Meat- Goat/ Lamb"
+  },
+  {
+   "id": 86599,
+   "name": "Onion Red Bag 10Lb Canada",
+   "price": 5.75,
+   "regular": 8.75,
+   "image": "https://static.tossdown.com/images/b4d73e9e0c5340ff9541e28bcc3b41c5.jpg",
+   "url": "https://iqbalfoods.ca/product/onion-red-bag-10lb-canada-86599",
+   "category": "Fruits & Vegetables"
+  },
+  {
+   "id": 86835,
+   "name": "Apple- Royal Gala - PER LB",
+   "price": 1.19,
+   "regular": 1.99,
+   "image": "https://static.tossdown.com/images/be90ce95a44bce729d95b52fbb45dd9f.jpg",
+   "url": "https://iqbalfoods.ca/product/apple-royal-gala-per-lb-86835",
+   "category": "Fruits & Vegetables"
+  },
+  {
+   "id": 378628,
+   "name": "Clementine - Per Lb.",
+   "price": 2.39,
+   "regular": 3.09,
+   "image": "https://static.tossdown.com/images/fdb86672-fe50-4127-a277-4850b8343a81.webp",
+   "url": "https://iqbalfoods.ca/product/clementine-per-lb-378628",
+   "category": "Fruits & Vegetables"
+  },
+  {
+   "id": 336001,
+   "name": "Pomegranate - Each",
+   "price": 2.29,
+   "regular": 3.69,
+   "image": "https://static.tossdown.com/images/7f5415cc-7c95-42de-a430-dcf66bee1f81.webp",
+   "url": "https://iqbalfoods.ca/product/pomegranate-each-336001",
+   "category": "Fruits & Vegetables"
+  },
+  {
+   "id": 452376,
+   "name": "Nanak Moong Dal Halwa 850g",
+   "price": 9.59,
+   "regular": 14.19,
+   "image": "https://static.tossdown.com/images/54a6c08b-b472-4147-8d03-bea310f1797a.webp",
+   "url": "https://iqbalfoods.ca/product/nanak-moong-dal-halwa-850g-452376",
+   "category": "Frozen"
+  },
+  {
+   "id": 74376,
+   "name": "Deep Frozen Tandoori Naan 16Pcs FP",
+   "price": 8.19,
+   "regular": 13.19,
+   "image": "https://static.tossdown.com/images/442465f5282183631234848d916ce3651.jpg",
+   "url": "https://iqbalfoods.ca/product/deep-frozen-tandoori-naan-16pcs-fp-74376",
+   "category": "Frozen"
+  },
+  {
+   "id": 74405,
+   "name": "Nanak Frozen Rasmalai 850g 12 Pcs",
+   "price": 9.59,
+   "regular": 15.85,
+   "image": "https://static.tossdown.com/images/8c1dccbfd25deffadc880995a842b0d4.png",
+   "url": "https://iqbalfoods.ca/product/nanak-frozen-rasmalai-850g-12-pcs-74405",
+   "category": "Frozen"
+  },
+  {
+   "id": 113448,
+   "name": "Nanak Frozen Mango Rasmalai 850g 12pcs",
+   "price": 9.59,
+   "regular": 15.19,
+   "image": "https://static.tossdown.com/images/de7ead93155d39659870232dd0804beb.jpg",
+   "url": "https://iqbalfoods.ca/product/nanak-frozen-mango-rasmalai-850g-12pcs-113448",
+   "category": "Frozen"
+  },
+  {
+   "id": 113447,
+   "name": "Nanak Frozen Kesar Rasmalai 850g 12pcs",
+   "price": 9.59,
+   "regular": 13.19,
+   "image": "https://static.tossdown.com/images/17dd1ae0a9e39b14cc4a3626ef96adad.jpg",
+   "url": "https://iqbalfoods.ca/product/nanak-frozen-kesar-rasmalai-850g-12pcs-113447",
+   "category": "Frozen"
+  },
+  {
+   "id": 86833,
+   "name": "Nanak Paneer 341g",
+   "price": 4.65,
+   "regular": 7.65,
+   "image": "https://static.tossdown.com/images/19a37a595e4fa0158974df477b09b07f.jpg",
+   "url": "https://iqbalfoods.ca/product/nanak-paneer-341g-86833",
+   "category": "Dairy"
+  },
+  {
+   "id": 452381,
+   "name": "Global Choice Poha Thin 2Lb",
+   "price": 2.39,
+   "regular": 3.59,
+   "image": "https://static.tossdown.com/images/b203d349-8d88-481d-af68-ded2885cadb6.webp",
+   "url": "https://iqbalfoods.ca/product/global-choice-poha-thin-2lb-452381",
+   "category": "Grocery"
+  },
+  {
+   "id": 452380,
+   "name": "Global Choice Poha Thick 2Lb",
+   "price": 2.39,
+   "regular": 3.99,
+   "image": "https://static.tossdown.com/images/e9348b60-18c9-45c6-b5a8-d094ecb40a1d.webp",
+   "url": "https://iqbalfoods.ca/product/global-choice-poha-thick-2lb-452380",
+   "category": "Grocery"
+  },
+  {
+   "id": 452379,
+   "name": "Deep Suji 2Lb",
+   "price": 2.39,
+   "regular": 4.49,
+   "image": "https://static.tossdown.com/images/bdc156e1-8e0a-464e-9049-ca6bd36b073c.webp",
+   "url": "https://iqbalfoods.ca/product/deep-suji-2lb-452379",
+   "category": "Grocery"
+  },
+  {
+   "id": 452367,
+   "name": "Bikano Gift Pack Meetha Chatpata 1.18Kg",
+   "price": 15.99,
+   "regular": 24.49,
+   "image": "https://static.tossdown.com/logos/f3473786-f8c8-4c6f-88a4-a2d27d853585.png",
+   "url": "https://iqbalfoods.ca/product/bikano-gift-pack-meetha-chatpata-1-18kg-452367",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 452368,
+   "name": "Bikano Gift Pack Uphaar 763g",
+   "price": 10.19,
+   "regular": 12.25,
+   "image": "https://static.tossdown.com/images/21dc64dd-8a20-4320-ab23-43c4b7716a17.webp",
+   "url": "https://iqbalfoods.ca/product/bikano-gift-pack-uphaar-763g-452368",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 452369,
+   "name": "Britannia Choco Delight Gift Pack 834g",
+   "price": 9.59,
+   "regular": 18.05,
+   "image": "https://static.tossdown.com/images/24008bf4-d84e-4809-9f90-e232070a1fa0.webp",
+   "url": "https://iqbalfoods.ca/product/britannia-choco-delight-gift-pack-834g-452369",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 452370,
+   "name": "Haldiram Double Mazzaa Gift Pack 1350g",
+   "price": 16.99,
+   "regular": 24.49,
+   "image": "https://static.tossdown.com/images/faa4b182-3e54-403b-9790-ee1a971628fc.webp",
+   "url": "https://iqbalfoods.ca/product/haldiram-double-mazzaa-gift-pack-1350g-452370",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 452371,
+   "name": "Haldiram Mazedaar Kissey Gift Pack 1130g",
+   "price": 16.99,
+   "regular": 24.49,
+   "image": "https://static.tossdown.com/images/ac8a527a-cc69-4ddc-946d-b25a94d69468.webp",
+   "url": "https://iqbalfoods.ca/product/haldiram-mazedaar-kissey-gift-pack-1130g-452371",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 111726,
+   "name": "Lays Sour Cream And Onion Flavor 200g.",
+   "price": 3.59,
+   "regular": 6.59,
+   "image": "https://static.tossdown.com/images/c757d65a4519ec2bd163b50093941056.jpeg",
+   "url": "https://iqbalfoods.ca/product/lays-sour-cream-and-onion-flavor-200g-111726",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 431055,
+   "name": "Lay's Tomato Tango 200g",
+   "price": 3.59,
+   "regular": 6.59,
+   "image": "https://static.tossdown.com/images/20623d91-2539-446b-83a6-284050ce53d0.webp",
+   "url": "https://iqbalfoods.ca/product/lays-tomato-tango-200g-431055",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 96229,
+   "name": "Crispy Pound Cake Coconut 368 G",
+   "price": 2.99,
+   "regular": 5.29,
+   "image": "https://static.tossdown.com/images/4a931befa3e4c87d5299e9234272a085.png",
+   "url": "https://iqbalfoods.ca/product/crispy-pound-cake-coconut-368-g-96229",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 96228,
+   "name": "Crispy Pound Cake Almond 368 G",
+   "price": 2.99,
+   "regular": 5.29,
+   "image": "https://static.tossdown.com/images/f06819f66743e5f0161904b908c53739.png",
+   "url": "https://iqbalfoods.ca/product/crispy-pound-cake-almond-368-g-96228",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 431039,
+   "name": "Lay's Hot & Sweet Chilli 200g",
+   "price": 3.59,
+   "regular": 6.59,
+   "image": "https://static.tossdown.com/images/8ee40c47-5dd3-457f-bc98-96bfb4913f84.webp",
+   "url": "https://iqbalfoods.ca/product/lays-hot-sweet-chilli-200g-431039",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 187417,
+   "name": "Lays Magic Masala Flavor 200g",
+   "price": 3.59,
+   "regular": 6.59,
+   "image": "https://static.tossdown.com/images/239e93c5-6d1a-490c-a299-86a33250b143.webp",
+   "url": "https://iqbalfoods.ca/product/lays-magic-masala-flavor-200g-187417",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 96227,
+   "name": "Crispy Pound Cakes Marble 368g",
+   "price": 2.99,
+   "regular": 5.29,
+   "image": "https://static.tossdown.com/images/c453c9a8d92f1f6aacc21f424469c20c.png",
+   "url": "https://iqbalfoods.ca/product/crispy-pound-cakes-marble-368g-96227",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 96226,
+   "name": "Crispy Fruit Cake Regular 380g",
+   "price": 2.99,
+   "regular": 5.29,
+   "image": "https://static.tossdown.com/images/55f971e3a5a850cd1d795b9fa4d834711.png",
+   "url": "https://iqbalfoods.ca/product/crispy-fruit-cake-regular-380g-96226",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 96231,
+   "name": "Crispy Pound Cake Regular 368 G",
+   "price": 2.99,
+   "regular": 5.29,
+   "image": "https://static.tossdown.com/images/192118901b05514d6706ffc9d1ca9e18.png",
+   "url": "https://iqbalfoods.ca/product/crispy-pound-cake-regular-368-g-96231",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 96232,
+   "name": "Crispy Cakes Banana Pecan 368g",
+   "price": 2.99,
+   "regular": 5.29,
+   "image": "https://static.tossdown.com/images/0501b4e3f17a759d1ac23462859567a7.png",
+   "url": "https://iqbalfoods.ca/product/crispy-cakes-banana-pecan-368g-96232",
+   "category": "Snacks & Cookies"
+  },
+  {
+   "id": 452373,
+   "name": "Brar Besan Burfi 400g",
+   "price": 8.99,
+   "regular": 12.89,
+   "image": "https://static.tossdown.com/images/e7addff4-24cb-4c4e-b4a3-f7479397332e.webp",
+   "url": "https://iqbalfoods.ca/product/brar-besan-burfi-400g-452373",
+   "category": "Sweets-Candies-Chocolates"
+  },
+  {
+   "id": 452372,
+   "name": "Brar Badam Burfi 400g",
+   "price": 8.99,
+   "regular": 12.89,
+   "image": "https://static.tossdown.com/images/56762102-c3d6-4819-870f-81a6975dd4fb.webp",
+   "url": "https://iqbalfoods.ca/product/brar-badam-burfi-400g-452372",
+   "category": "Sweets-Candies-Chocolates"
+  },
+  {
+   "id": 452374,
+   "name": "Brar Besan Laddu 400g",
+   "price": 8.99,
+   "regular": 12.89,
+   "image": "https://static.tossdown.com/images/a493f595-efac-41e3-acd2-04c6f68a4b61.webp",
+   "url": "https://iqbalfoods.ca/product/brar-besan-laddu-400g-452374",
+   "category": "Sweets-Candies-Chocolates"
+  },
+  {
+   "id": 452375,
+   "name": "Brar Kaju Katli 400g",
+   "price": 8.99,
+   "regular": 12.89,
+   "image": "https://static.tossdown.com/images/8f4b984e-c123-49de-bd3d-2eb521c5f497.webp",
+   "url": "https://iqbalfoods.ca/product/brar-kaju-katli-400g-452375",
+   "category": "Sweets-Candies-Chocolates"
+  },
+  {
+   "id": 452383,
+   "name": "Ditaliano Brizzolio Loaf Fresh 675g",
+   "price": 3.95,
+   "regular": 5.05,
+   "image": "https://static.tossdown.com/images/5611c760-72e6-49f8-9355-36f782d40eb7.webp",
+   "url": "https://iqbalfoods.ca/product/ditaliano-brizzolio-loaf-fresh-675g-452383",
+   "category": "Bakery"
+  },
+  {
+   "id": 452382,
+   "name": "Ditaliano Bread Seasame 675g",
+   "price": 3.95,
+   "regular": 5.05,
+   "image": "https://static.tossdown.com/images/75aa718f-bfde-441b-b757-5e47ffcd7f50.webp",
+   "url": "https://iqbalfoods.ca/product/ditaliano-bread-seasame-675g-452382",
+   "category": "Bakery"
+  },
+  {
+   "id": 181935,
+   "name": "DItaliano Thick Slice Whole Wheat 675g",
+   "price": 3.95,
+   "regular": 5.09,
+   "image": "https://static.tossdown.com/images/69658837-f4f9-4f6e-9d20-2c1e5791e0b7.webp",
+   "url": "https://iqbalfoods.ca/product/ditaliano-thick-slice-whole-wheat-675g-181935",
+   "category": "Bakery"
+  },
+  {
+   "id": 181936,
+   "name": "DItaliano Thick Slice White 675g",
+   "price": 3.95,
+   "regular": 5.09,
+   "image": "https://static.tossdown.com/images/61ddfaae765864a6445f4cdd5802f372.jpeg",
+   "url": "https://iqbalfoods.ca/product/ditaliano-thick-slice-white-675g-181936",
+   "category": "Bakery"
+  },
+  {
+   "id": 452388,
+   "name": "V Love Perfume Refreshing Sweet 30ml+Bm/Bl/Sg 50ml",
+   "price": 22.99,
+   "regular": 32.99,
+   "image": "https://static.tossdown.com/images/11944c28-da63-4b42-91d3-bbb5b1e0a49a.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-refreshing-sweet-30ml-bm-bl-sg-50ml-452388",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452387,
+   "name": "V Love Perfume Mountaineer Green 30ml+Bm 20ml+As/Sg 50ml",
+   "price": 22.99,
+   "regular": 32.99,
+   "image": "https://static.tossdown.com/images/b031e014-09eb-40d6-9008-f97162860589.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-mountaineer-green-30ml-bm-20ml-as-sg-50ml-452387",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452384,
+   "name": "Apollo Blue Perfume 30ml Bm 20ml As  Sg 50ml",
+   "price": 22.99,
+   "regular": 34.99,
+   "image": "https://static.tossdown.com/images/e11463a0-8547-42a2-9a49-de7a80abb281.webp",
+   "url": "https://iqbalfoods.ca/product/apollo-blue-perfume-30ml-bm-20ml-as-sg-50ml-452384",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452385,
+   "name": "V Love Perfume Bravo Hero 30ml+Bm 20ml+Af/Sg 50ml",
+   "price": 22.99,
+   "regular": 32.99,
+   "image": "https://static.tossdown.com/images/a9956656-26e2-47a2-ac5a-313ced27d202.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-bravo-hero-30ml-bm-20ml-af-sg-50ml-452385",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452386,
+   "name": "V Love Perfume La Robe Fatale Rose 30ml Bm/Bl/Sg 50ml",
+   "price": 22.99,
+   "regular": 32.99,
+   "image": "https://static.tossdown.com/images/abb1930f-b697-45c1-9dae-944e73cbb2c6.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-la-robe-fatale-rose-30ml-bm-bl-sg-50ml-452386",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452389,
+   "name": "V Love Perfume Velvet Mango 25ml+Bm/Bl/Sg 50ml",
+   "price": 22.99,
+   "regular": 32.99,
+   "image": "https://static.tossdown.com/images/d4da4aa5-28f8-4dd6-9880-965dd8e6f464.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-velvet-mango-25ml-bm-bl-sg-50ml-452389",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452298,
+   "name": "V Love Perfume Silent Longing L/L 100ml",
+   "price": 14.15,
+   "regular": 17.15,
+   "image": "https://static.tossdown.com/images/7f95cdb4-3404-4050-8617-5d4615a94884.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-silent-longing-l-l-100ml-452298",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452340,
+   "name": "Missy GG Black Perfume 80ml",
+   "price": 23.39,
+   "regular": 26.39,
+   "image": "https://static.tossdown.com/images/3c45f9a6-582e-447e-8976-700cc4254acf.webp",
+   "url": "https://iqbalfoods.ca/product/missy-gg-black-perfume-80ml-452340",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452303,
+   "name": "Iscents Perfume Confection 100ml",
+   "price": 23.39,
+   "regular": 26.39,
+   "image": "https://static.tossdown.com/images/4d564431-f034-4b40-8abd-bf22b4a6cb29.webp",
+   "url": "https://iqbalfoods.ca/product/iscents-perfume-confection-100ml-452303",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452302,
+   "name": "V Love Perfume Eyad Intense L/L 100ml",
+   "price": 14.15,
+   "regular": 17.15,
+   "image": "https://static.tossdown.com/images/f671c70e-4a7c-4694-83f3-da8cfc5f5839.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-eyad-intense-l-l-100ml-452302",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452301,
+   "name": "V Love Perfume Apollo Blue L/L 100ml",
+   "price": 14.15,
+   "regular": 17.15,
+   "image": "https://static.tossdown.com/images/2933568c-c8f8-4d4c-a31f-602e0a1aabdb.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-apollo-blue-l-l-100ml-452301",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452300,
+   "name": "V Love Perfume Lucky Croc Rouge 100ml",
+   "price": 14.15,
+   "regular": 17.15,
+   "image": "https://static.tossdown.com/images/3d3b989c-399b-45c4-b38a-fe460fe69983.webp",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-lucky-croc-rouge-100ml-452300",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452299,
+   "name": "V Love Perfume Nur Musk 100ml",
+   "price": 14.15,
+   "regular": 17.15,
+   "image": "https://static.tossdown.com/logos/f3473786-f8c8-4c6f-88a4-a2d27d853585.png",
+   "url": "https://iqbalfoods.ca/product/v-love-perfume-nur-musk-100ml-452299",
+   "category": "Health & Beauty"
+  },
+  {
+   "id": 452390,
+   "name": "Red Label Tea Loose 1Kg",
+   "price": 11.99,
+   "regular": 17.99,
+   "image": "https://static.tossdown.com/images/997b8a18-09aa-4286-a4f7-b5ed9d44c364.webp",
+   "url": "https://iqbalfoods.ca/product/red-label-tea-loose-1kg-452390",
+   "category": "Tea & Coffee"
+  },
+  {
+   "id": 74480,
+   "name": "Shan Ginger & Garlic Paste 700g",
+   "price": 5.85,
+   "regular": 6.45,
+   "image": "https://static.tossdown.com/images/de9cf7fc237bf2217c1c576e4f026fee.png",
+   "url": "https://iqbalfoods.ca/product/shan-ginger-garlic-paste-700g-74480",
+   "category": "Pickles, Pastes & Sauces"
+  },
+  {
+   "id": 74564,
+   "name": "Nanak Desi Ghee 3.5Lbs (1.6 Kgs.)",
+   "price": 26.39,
+   "regular": 37.99,
+   "image": "https://static.tossdown.com/images/3e3fa756bedd8599c326b868a83216a11.jpg",
+   "url": "https://iqbalfoods.ca/product/nanak-desi-ghee-3-5lbs-1-6-kgs-74564",
+   "category": "Oil and Ghee"
+  },
+  {
+   "id": 74576,
+   "name": "India Gate Basmati Feast Rozzana 10Lb",
+   "price": 13.19,
+   "regular": 16.49,
+   "image": "https://static.tossdown.com/images/dbb265f0d2f7cdec338c98597572beb2.jpg",
+   "url": "https://iqbalfoods.ca/product/india-gate-basmati-feast-rozzana-10lb-74576",
+   "category": "Rice"
+  },
+  {
+   "id": 452378,
+   "name": "Deep Maida All Purpose Flour 2Lb",
+   "price": 2.39,
+   "regular": 4.79,
+   "image": "https://static.tossdown.com/images/f1073604-afd2-4000-8394-f0eff709b1d5.webp",
+   "url": "https://iqbalfoods.ca/product/deep-maida-all-purpose-flour-2lb-452378",
+   "category": "Flour"
+  },
+  {
+   "id": 452377,
+   "name": "Deep Besan 2Lb",
+   "price": 2.99,
+   "regular": 6.35,
+   "image": "https://static.tossdown.com/images/d8796e1b-0b37-4e3b-9485-45255112d9e1.webp",
+   "url": "https://iqbalfoods.ca/product/deep-besan-2lb-452377",
+   "category": "Flour"
+  },
+  {
+   "id": 74446,
+   "name": "Aashirvaad Flour Whole Wheat 20Lb",
+   "price": 16.95,
+   "regular": 27.95,
+   "image": "https://static.tossdown.com/images/a63102d6-5a4b-4b1a-9bda-94e9ef2fbc29.webp",
+   "url": "https://iqbalfoods.ca/product/aashirvaad-flour-whole-wheat-20lb-74446",
+   "category": "Flour"
+  }
+ ]
+}

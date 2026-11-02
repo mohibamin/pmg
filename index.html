@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMG · Price Match Groceries</title>
+  <meta name="description" content="Search this week's flyers at Walmart, Costco, Sobeys, FreshCo, Chalo FreshCo, Food Basics, No Frills and Iqbal Foods. See every price, the cheapest store, and who price matches.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://backflipp.wishabi.com" crossorigin>
+  <link rel="preconnect" href="https://f.wishabi.net">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="ambient-particles-layer"></div>
+
+  <header class="topbar">
+    <a class="brand" href="./">
+      <span class="brand-mark">PMG</span>
+      <span class="brand-text">
+        <span class="brand-name">PRICE MATCH GROCERIES</span>
+        <span class="brand-sub">Cheapest groceries · weekly flyers</span>
+      </span>
+    </a>
+
+    <nav class="tab-bar" role="tablist">
+      <button class="tab-btn active" data-tab="compare" role="tab">Compare</button>
+      <button class="tab-btn" data-tab="deals" role="tab">Store Deals</button>
+      <button class="tab-btn" data-tab="pm" role="tab">Price Matching</button>
+      <button class="tab-btn" data-tab="flyers" role="tab">Flyers</button>
+    </nav>
+
+    <form class="postal" id="postalForm" autocomplete="off">
+      <label for="postal">Postal</label>
+      <input id="postal" maxlength="7" placeholder="M5B 2K3" spellcheck="false">
+      <button type="submit" class="home-nav-btn small">Set</button>
+    </form>
+  </header>
+
+  <main>
+    <!-- ── Compare ─────────────────────────────────────────── -->
+    <section class="tab-panel active" id="tab-compare">
+      <div class="hero">
+        <div class="eyebrow">// This week's flyers <span id="weekRange"></span></div>
+        <h1>Find the cheapest price<br>across <span class="grad"><span id="storeCount">8</span> grocery stores</span></h1>
+        <form id="searchForm" class="search" autocomplete="off">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Search an item, e.g. roma tomatoes" aria-label="Search item">
+          <button class="btn primary-btn" type="submit">Search</button>
+        </form>
+        <div class="chips" id="quick"></div>
+        <div class="store-toggles" id="storeToggles"></div>
+        <div class="status" id="status"><span class="pulse-dot"></span>Loading flyers…</div>
+      </div>
+      <div id="results"></div>
+    </section>
+
+    <!-- ── Store deals ─────────────────────────────────────── -->
+    <section class="tab-panel" id="tab-deals">
+      <h2 class="section-title">This week's deals by store</h2>
+      <p class="caption">Pick a store to see everything in its current flyer.</p>
+      <div class="deals-picker" id="dealsPicker"></div>
+      <div id="dealsBody"></div>
+    </section>
+
+    <!-- ── Price matching ──────────────────────────────────── -->
+    <section class="tab-panel" id="tab-pm">
+      <h2 class="section-title">Who price matches?</h2>
+      <p class="caption">Policies checked November 2026. They vary by location and change often, so bring the flyer and confirm at the till.</p>
+      <div class="pm-grid" id="pmGrid"></div>
+      <h3 class="subsection-title">Who will match whose flyer</h3>
+      <div class="table-wrap"><table class="pm-table" id="pmTable"></table></div>
+      <ul class="tips">
+        <li>FreshCo <strong>beats</strong> an eligible competitor's flyer price by 1¢. No Frills <strong>matches</strong> it.</li>
+        <li>Both usually cap matches at 4 units per item, and the item must be identical (same brand and size).</li>
+        <li>Costco, Sobeys and Iqbal Foods flyers generally aren't accepted for price matching.</li>
+      </ul>
+    </section>
+
+    <!-- ── Flyers ──────────────────────────────────────────── -->
+    <section class="tab-panel" id="tab-flyers">
+      <h2 class="section-title">Flyers loaded</h2>
+      <p class="caption" id="flyerCaption"></p>
+      <div class="flyer-grid" id="flyerGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Flyer data via Flipp · Iqbal specials from iqbalfoods.ca, refreshed weekly</span>
+    <span>Prices vary by store location. Not affiliated with any retailer.</span>
+    <a href="https://mohibamin.com">mohibamin.com</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <figure>
+      <img id="lightboxImg" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
